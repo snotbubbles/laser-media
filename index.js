@@ -94,8 +94,8 @@ if(contactForm) {
     }))
 
     if(!formError) {
+        contactForm.submit()
         contactForm.innerHTML ="<h1>thank you!</h1>"
-        console.log(fieldsObj)
     }
 
     else {
