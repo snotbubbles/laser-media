@@ -1,30 +1,27 @@
 const menu = document.getElementById('nav-menu')
-const menuToggle = document.querySelectorAll('.menu-btn')
+const menuToggleButtons = document.querySelectorAll('.menu-btn')
 const sliders = document.querySelectorAll('.slider')
 const sliderContainer = document.querySelector(".before-and-after-ctr")
 const contactForm = document.getElementById("contact-form")
 const portfolioContainer = document.getElementById("portfolio-ctr")
 
 
-for (const btn of menuToggle) {
-    btn.addEventListener("click", () => {
-        if(menu.style.transform ===  "translateX(100%)") {
-            menu.style.transform = "translateX(0)"
-            menu.setAttribute("aria-hidden", "false")
-            for(const toggle of menuToggle) {
-                toggle.setAttribute("aria-expanded", "true")
-            }
-        }
+document.addEventListener('click', (event) => {
+    const button = event.target.closest('.menu-btn');
+    if (!button) return; // click wasn't on a menu button
 
-        else {
-            menu.style.transform = "translateX(100%)"
-            menu.setAttribute("aria-hidden", "true")
-            for(const toggle of menuToggle) {
-                toggle.setAttribute("aria-expanded", "false")
-            }
-        }
-    })
-}
+    const isOpen = menu.style.transform !== "translateX(100%)";
+
+    if (!isOpen) {
+        menu.style.transform = "translateX(0)"
+        menu.setAttribute("aria-hidden", "false")
+        menuToggleButtons.forEach(btn => btn.setAttribute("aria-expanded", "true"))
+    } else {
+        menu.style.transform = "translateX(100%)"
+        menu.setAttribute("aria-hidden", "true")
+        menuToggleButtons.forEach(btn => btn.setAttribute("aria-expanded", "false"))
+    }
+})
 
 if (sliders) {
     sliders.forEach(slider => {
