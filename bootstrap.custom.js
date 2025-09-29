@@ -1,6 +1,5 @@
-// Import Carousel
-import 'bootstrap/js/dist/carousel';
+// Import only the carousel module (includes swipe + transition internally)
+import Carousel from 'bootstrap/js/dist/carousel';
 
-// Expose globally (so your index.js works as written)
-import * as bootstrap from 'bootstrap';
-window.bootstrap = bootstrap;
+// Expose globally so your index.js still works
+window.bootstrap = { Carousel };
