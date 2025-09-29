@@ -424,6 +424,10 @@ input[type=number] {
     z-index: var(--z-low);
 }
 
+/* .carousel-item {
+    transition: transform .6s ease-in-out;
+} */
+
 .portfolio-modal .carousel.slide {
     position: relative;
 }

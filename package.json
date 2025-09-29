@@ -1,0 +1,27 @@
+{
+  "name": "laser-media",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-bootstrap": "esbuild bootstrap.custom.js --bundle --minify --outfile=js/bootstrap.carousel.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snotbubbles/laser-media.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snotbubbles/laser-media/issues"
+  },
+  "homepage": "https://github.com/snotbubbles/laser-media#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.10"
+  }
+}
