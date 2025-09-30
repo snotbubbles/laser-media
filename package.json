@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-bootstrap": "esbuild bootstrap.custom.js --bundle --minify --outfile=js/bootstrap.carousel.min.js"
+    "build-bootstrap": "esbuild bootstrap.custom.js --bundle --minify --outfile=js/bootstrap.carousel.min.js",
+    "build-css": "postcss bootstrapmin.css -o bootstrap.purged.css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,10 @@
     "bootstrap": "^5.3.8"
   },
   "devDependencies": {
-    "esbuild": "^0.25.10"
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.25.10",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
   }
 }

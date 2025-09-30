@@ -1,5 +1,6 @@
-// Import only the carousel module (includes swipe + transition internally)
+// Import carousel & collapse
 import Carousel from 'bootstrap/js/dist/carousel';
+import Collapse from 'bootstrap/js/dist/collapse';
 
-// Expose globally so your index.js still works
-window.bootstrap = { Carousel };
+// Expose globally so index.js and your HTML data-bs-* attributes work
+window.bootstrap = { Carousel, Collapse };
