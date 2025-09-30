@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-bootstrap": "esbuild bootstrap.custom.js --bundle --minify --outfile=js/bootstrap.carousel.min.js",
-    "build-css": "postcss bootstrapmin.css -o bootstrap.purged.css"
+    "build-css": "postcss bootstrapmin.css -o bootstrap.purged.css",
+    "build-fa": "postcss node_modules/@fortawesome/fontawesome-free/css/all.min.css -o fontawesome.purged.css"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/snotbubbles/laser-media#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.1",
     "bootstrap": "^5.3.8"
   },
   "devDependencies": {
@@ -27,6 +29,7 @@
     "autoprefixer": "^10.4.21",
     "esbuild": "^0.25.10",
     "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1"
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1"
   }
 }
