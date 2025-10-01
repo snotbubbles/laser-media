@@ -67,19 +67,19 @@ h1, h2 {
     font-size: 2rem;
 }
 
-h3 {
+h3, .features-text-ctr h2 {
     font-size: 1.5rem;
 }
 
-h4 {
+footer h3 {
     font-size: 1.125rem;
 }
 
-h1, h3 {
+h1, h3, .features-text-ctr h2 {
     font-weight: 700;
 }
 
-h2, h4{
+h2, footer h3 {
     font-weight: 600;
 }
 
