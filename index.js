@@ -15,10 +15,12 @@ document.addEventListener('click', (event) => {
     if (!isOpen) {
         menu.style.transform = "translateX(0)"
         menu.setAttribute("aria-hidden", "false")
+        menu.removeAttribute("inert")
         menuToggleButtons.forEach(btn => btn.setAttribute("aria-expanded", "true"))
     } else {
         menu.style.transform = "translateX(100%)"
         menu.setAttribute("aria-hidden", "true")
+        menu.setAttribute("inert", "")
         menuToggleButtons.forEach(btn => btn.setAttribute("aria-expanded", "false"))
     }
 })
