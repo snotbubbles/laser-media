@@ -8,8 +8,10 @@ const portfolioContainer = document.getElementById("portfolio-ctr")
 function setInitialMenuState() {
   if (window.innerWidth < 992) {
     menu.setAttribute("inert", "")
+    menu.setAttribute("aria-hidden", "true")
   } else {
     menu.removeAttribute("inert")
+    menu.removeAttribute("aria-hidden")
   }
 }
 
