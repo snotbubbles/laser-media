@@ -286,6 +286,7 @@ nav svg:active path {
     gap: 2em;
     width: 14em;
     padding: 0 1.5rem;
+    z-index: var(--z-overlay);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     background-color: var(--black);
@@ -942,6 +943,7 @@ footer li > a:hover {
     align-items: center;
     background-color: transparent;
     justify-content: space-between;
+    background-color: transparent;
     }
 
     .nav-text {

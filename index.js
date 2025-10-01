@@ -5,6 +5,12 @@ const sliderContainer = document.querySelector(".before-and-after-ctr")
 const contactForm = document.getElementById("contact-form")
 const portfolioContainer = document.getElementById("portfolio-ctr")
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 992) {
+    menu.removeAttribute("inert");
+    menu.style.transform = "none"; // ensure it's inline
+  }
+})
 
 document.addEventListener('click', (event) => {
     const button = event.target.closest('.menu-btn');
