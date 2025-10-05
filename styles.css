@@ -59,7 +59,7 @@ body { font-family: "Montserrat", sans-serif; }
 ======================= */
 
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     margin: 0;
 }
 
@@ -705,7 +705,7 @@ width: 100%;
     margin-bottom: 1.25rem;
 }
 
-.trust-brand-ctr > img {
+.trust-brand-ctr img {
     height: 4.167rem;
 }
 
@@ -778,11 +778,11 @@ footer p, .footer-bottom a {
     text-align: center;
 }
 
-.footer-left li, .footer-left h4 {
+.footer-left li, .footer-left h3 {
     margin: 0 0 1.667rem 0;
 }
 
-.footer-right h4 {
+.footer-right h3 {
     margin: 0 0 0.8333rem 0;
 }
 
