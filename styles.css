@@ -823,6 +823,11 @@ footer li > a:hover {
     gap: 1.25rem;
 }
 
+.about-section-container a.lm-button {
+  clear: both;
+  display: block;
+}
+
 .portfolio-ctr  {
     display: grid;
     grid-template-columns: 1fr;
