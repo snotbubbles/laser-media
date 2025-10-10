@@ -102,6 +102,9 @@ if(contactForm) {
     }))
 
     if(!formError) {
+        if (typeof fbq === 'function') {
+            fbq('track', 'Lead');
+        }
         contactForm.submit()
         contactForm.innerHTML ="<h1>thank you!</h1>"
     }
