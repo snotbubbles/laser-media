@@ -908,7 +908,6 @@ footer li > a:hover {
 
     .about-page-img {
         width: 50vw;
-        max-width: 560px;
         float: left;
         margin: 0 1.667rem 0.5rem 0;
     }
@@ -1030,6 +1029,10 @@ footer li > a:hover {
     }
     .feature-ctr {
         width: calc((1200px - 2.75rem) / 3);
+    }
+
+    .about-page-img {
+        max-width: 480px;
     }
 
     .footer-left {
