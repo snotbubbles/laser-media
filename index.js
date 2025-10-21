@@ -106,11 +106,8 @@ if(contactForm) {
             fbq('track', 'Lead')
             console.log("Lead event fired!")
         }
-        setTimeout(() => {
-            contactForm.submit()
-            contactForm.innerHTML ="<h1>thank you!</h1>"
-        }, 500)
-
+        contactForm.submit()
+        contactForm.innerHTML ="<h1>thank you!</h1>"
     }
 
     else {
