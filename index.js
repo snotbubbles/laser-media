@@ -103,7 +103,8 @@ if(contactForm) {
 
     if(!formError) {
         if (typeof fbq === 'function') {
-            fbq('track', 'Lead');
+            fbq('track', 'Lead')
+            console.log("Lead event fired!")
         }
         contactForm.submit()
         contactForm.innerHTML ="<h1>thank you!</h1>"
