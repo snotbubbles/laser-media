@@ -582,14 +582,14 @@ width: 100%;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: var(--cyan2);   /* your custom background color */
+    background-color: transparent;   /* your custom background color */
     color: var(--black);             /* your custom text color */
 }
 
 .accordion-button:focus,
 .accordion-button:focus-visible,
 .accordion-button:not(.collapsed) {
-  box-shadow: 0 0 0 0.25rem var(--cyan2) !important;
+  box-shadow: none !important;
 }
 
 .accordion-button::after {
