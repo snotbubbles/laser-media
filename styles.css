@@ -34,7 +34,7 @@
     --divider: #B2B2B2;
     --red: red;
     --cyan2: rgba(11, 186, 168, 0.5);
-    --cyan3: #036258;
+    --purple: #AE007D;
 
     --z-base: 1;
     --z-low: 10;
@@ -107,7 +107,7 @@ input::placeholder, textarea::placeholder {
 
 a {
     text-decoration: none;
-    color: var(--cyan3);
+    color: var(--purple);
 }
 
 a:hover { 
