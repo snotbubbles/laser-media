@@ -197,6 +197,11 @@ button:hover {
 
 /* Buttons */
 
+button {
+    font-size: 1em;
+    font-family: inherit;
+}
+
 .lm-button {
     text-decoration: none;
     font-family: inherit;
@@ -223,9 +228,10 @@ button:hover {
     border-color: var(--cyan);
 }
 
-.lm-button.white-text.black-bg:hover {
+.lm-button.white-text.black-bg:hover, button.lm-button.white-text.black-bg:hover {
     background-color: var(--cyan);
     color: white;
+    cursor: pointer;
 }
 
 .lm-button.white-text.black-bg:active {
