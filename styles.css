@@ -364,17 +364,16 @@ input, textarea {
     width: 1.25rem;
 }
 
+.terms-ctr {
+    display: flex;
+    gap: 0.625rem;
+}
+
 .terms {
     accent-color: var(--cyan);
     height: 1.25rem;
     width: 1.25rem;
-    display: block;
-    float: left;
-    margin-right: 0.625rem;
-}
-
-.terms:hover, label:hover {
-    cursor: pointer;
+    margin-right: ;
 }
 
 .checkbox-ctr {
