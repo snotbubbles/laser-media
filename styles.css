@@ -365,7 +365,7 @@ input, textarea {
 }
 
 .terms {
-    accent-color: (var(--cyan));
+    accent-color: var(--cyan);
     height: 1.25rem;
     width: 1.25rem;
     display: block;
