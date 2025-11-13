@@ -102,13 +102,7 @@ if(contactForm) {
     }))
 
     if(!formError) {
-        if (typeof fbq === 'function') {
-            fbq('track', 'Lead')
-            console.log("Lead event fired!")
-        }
-        setTimeout(() => {
             contactForm.submit()
-        }, 300)
     }
 
     else {
